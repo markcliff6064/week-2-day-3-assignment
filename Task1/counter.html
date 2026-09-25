@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Character Counter</title>
+
+    <!-- Connect the shared CSS file -->
+    <link rel="stylesheet" href="counter.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Character Counter</h1>
+
+        <p>Write a message with a maximum of 280 characters.</p>
+
+        <!--
+            The textarea is where the user types the message.
+            maxlength is set to 280 so the browser also limits the input.
+        -->
+        <textarea
+            id="message"
+            maxlength="280"
+            placeholder="Type your message here..."
+        ></textarea>
+
+        <!--
+            JavaScript will update this text every time
+            the user types something.
+        -->
+        <p id="counter">0/280 characters</p>
+
+    </div>
+
+    <!-- Connect the JavaScript file -->
+    <script src="counter.js"></script>
+
+</body>
+</html>

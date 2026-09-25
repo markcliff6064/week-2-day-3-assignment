@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping List</title>
+
+    <link rel="stylesheet" href="shopping-list.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Shopping List</h1>
+
+        <!--
+            This counter will be updated by JavaScript.
+            It shows how many items have not been bought.
+        -->
+        <h2 id="itemsRemaining">0 items remaining</h2>
+
+
+        <!-- Shopping item name -->
+        <input
+            type="text"
+            id="itemName"
+            placeholder="Enter item name"
+        >
+
+        <!-- Quantity -->
+        <input
+            type="number"
+            id="quantity"
+            value="1"
+            min="1"
+            placeholder="Quantity"
+        >
+
+        <!-- Button used to add an item -->
+        <button id="addItem">Add Item</button>
+
+        <!--
+            JavaScript will put the error message here
+            when the user tries to add an empty item.
+        -->
+        <p id="errorMessage"></p>
+
+
+        <!--
+            JavaScript will create <li> elements
+            and place them inside this list.
+        -->
+        <ul id="shoppingList"></ul>
+
+    </div>
+
+    <script src="shopping-list.js"></script>
+
+</body>
+</html>

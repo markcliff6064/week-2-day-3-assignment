@@ -1,0 +1,157 @@
+/* SHOPPING LIST STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 50px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+
+    color: #444;
+}
+
+/* Item name and quantity inputs */
+
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #333;
+}
+
+/* Add Item button */
+
+#addItem {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    background-color: #333;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+#addItem:hover {
+    background-color: #555;
+}
+
+/* Error message */
+
+#errorMessage {
+    min-height: 20px;
+
+    font-weight: bold;
+}
+
+/* Shopping list */
+
+#shoppingList {
+    padding: 0;
+
+    list-style: none;
+}
+
+/* Individual shopping item */
+
+#shoppingList li {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    background-color: #f5f5f5;
+
+    border-radius: 6px;
+}
+
+/* Item text takes available space */
+
+#shoppingList li span {
+    flex: 1;
+}
+
+/* Bought item */
+
+#shoppingList li.bought span {
+    text-decoration: line-through;
+
+    color: grey;
+}
+
+/* Buttons inside shopping items */
+
+#shoppingList li button {
+    padding: 8px 12px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #333;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+#shoppingList li button:hover {
+    background-color: #555;
+}
